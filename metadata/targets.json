@@ -2,7 +2,7 @@
  "signatures": [
   {
    "keyid": "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81",
-   "sig": "3045022100d8c8b9a9f82f7b7009d5e1e2d335c69ba6a1f977f5ff6ec7895d7493fcc104bc022008486b7db448150beaeaf6497a380168ec2b80c6eabe72a3c7ff0219f54a83c4"
+   "sig": ""
   }
  ],
  "signed": {
@@ -32,10 +32,24 @@
      ],
      "terminating": true,
      "threshold": 1
+    },
+    {
+     "keyids": [
+      "a54e905f3e03bb0cccdc954bd40d4d29b5c1a2a95c2777f10f9c63a503c7f777"
+     ],
+     "name": "externally-delegated-role",
+     "paths": [
+      "externally-delegated-role/*",
+      "externally-delegated-role/*/*",
+      "externally-delegated-role/*/*/*",
+      "externally-delegated-role/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
     }
    ]
   },
-  "expires": "2025-08-09T08:39:27Z",
+  "expires": "2025-08-09T10:36:13Z",
   "spec_version": "1.0.31",
   "targets": {},
   "version": 2,
