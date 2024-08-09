@@ -22,3 +22,4 @@ jobs:
         uses: jku/tuf-on-ci/actions/signing-event@external-delegations # test targets online signing
         with:
           token: ${{ secrets.TUF_ON_CI_TOKEN || secrets.GITHUB_TOKEN }}
+          targets_to_sign: delegated-role
