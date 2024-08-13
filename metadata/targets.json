@@ -2,15 +2,57 @@
  "signatures": [
   {
    "keyid": "aa61e09f6af7662ac686cf0c6364079f63d3e7a86836684eeced93eace3acd81",
-   "sig": "3046022100f749ebd07d2397efe38f533eeb7ef7e419a2dd4ee2effc8b2181c5de586cde67022100d7de75a12b77c6112987a8c8dd3c1f74f7dea9a8929cd9b9e039fe629e83028b"
+   "sig": "3044022009f4e546bb513b2175b5bb5e51ec5d1c2cdf37c1bd55075f9f679d52e41a9079022071bccca5cb50ae23347c260512cbcdac98b1c68df3f74b931162f29abc6e771d"
   }
  ],
  "signed": {
   "_type": "targets",
-  "expires": "2025-08-09T08:14:57Z",
+  "delegations": {
+   "keys": {
+    "a54e905f3e03bb0cccdc954bd40d4d29b5c1a2a95c2777f10f9c63a503c7f777": {
+     "keytype": "ecdsa",
+     "keyval": {
+      "public": "-----BEGIN PUBLIC KEY-----\nMFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEu+ebm3VUg6U2b0IIeR6NFZU7uxkL\nR1sVLxV8SEW7G+AMXMasEQf5daxfwVMP1kuEkhGs3mBYLkYXlWDh9BNSxg==\n-----END PUBLIC KEY-----\n"
+     },
+     "scheme": "ecdsa-sha2-nistp256",
+     "x-tuf-on-ci-online-uri": "gcpkms:projects/python-tuf-kms/locations/global/keyRings/git-repo-demo/cryptoKeys/online/cryptoKeyVersions/1"
+    }
+   },
+   "roles": [
+    {
+     "keyids": [
+      "a54e905f3e03bb0cccdc954bd40d4d29b5c1a2a95c2777f10f9c63a503c7f777"
+     ],
+     "name": "delegated-role",
+     "paths": [
+      "delegated-role/*",
+      "delegated-role/*/*",
+      "delegated-role/*/*/*",
+      "delegated-role/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
+    },
+    {
+     "keyids": [
+      "a54e905f3e03bb0cccdc954bd40d4d29b5c1a2a95c2777f10f9c63a503c7f777"
+     ],
+     "name": "externally-delegated-role",
+     "paths": [
+      "externally-delegated-role/*",
+      "externally-delegated-role/*/*",
+      "externally-delegated-role/*/*/*",
+      "externally-delegated-role/*/*/*/*"
+     ],
+     "terminating": true,
+     "threshold": 1
+    }
+   ]
+  },
+  "expires": "2025-08-09T10:36:13Z",
   "spec_version": "1.0.31",
   "targets": {},
-  "version": 1,
+  "version": 2,
   "x-tuf-on-ci-expiry-period": 365,
   "x-tuf-on-ci-signing-period": 60
  }
